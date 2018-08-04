@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2018 Baidu, Inc. All Rights Reserved.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/debug_setting_session_time"
+        style="@style/DebugSectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network Environment"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/debug_text_debug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_item_selector"
+        android:clickable="true"
+        android:text="DEBUG" />
+
+    <Button
+        android:id="@+id/debug_text_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_item_selector"
+        android:clickable="true"
+        android:text="RELEASE" />
+
+</LinearLayout>

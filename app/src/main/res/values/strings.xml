@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tripsight</string>
+
+
+    <string name="fragment_home">首页</string>
+    <string name="fragment_attention">关注</string>
+    <string name="fragment_discover">发现</string>
+    <string name="fragment_account">我</string>
+
+    <!-- 网络相关 -->
+    <string name="network_error">网络错误，点击重试</string>
+
+</resources>

@@ -1,0 +1,17 @@
+/*
+ * Copyright (C) 2018 Baidu, Inc. All Rights Reserved.
+ */
+
+// Get the last Git Short Hash
+def getGitHash = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'rev-parse', '--short', 'HEAD'
+        standardOutput = stdout
+    }
+    return stdout.toString().trim()
+}
+
+ext {
+    GIT_SHA = "\"${getGitHash()}\""
+}

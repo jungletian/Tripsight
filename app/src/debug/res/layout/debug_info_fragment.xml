@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2018 Baidu, Inc. All Rights Reserved.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/DebugSectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Device Information" />
+
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUID" />
+
+    <TextView
+        android:id="@+id/debug_cuid"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+
+    <!--version name-->
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Make" />
+
+    <TextView
+        android:id="@+id/debug_device_make"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/DebugSectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp" />
+
+
+    <!--version code-->
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Model" />
+
+    <TextView
+        android:id="@+id/debug_device_model"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/DebugSectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp" />
+
+    <!--sha-->
+
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Resolution" />
+
+    <TextView
+        android:id="@+id/debug_device_resolution"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/DebugSectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp" />
+    <!--build time-->
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Density" />
+
+    <TextView
+        android:id="@+id/debug_device_density"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/DebugSectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Release" />
+
+    <TextView
+        android:id="@+id/debug_device_release"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/DebugSectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device API" />
+
+
+    <TextView
+        android:id="@+id/debug_device_api"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/debug_card_divider" />
+
+    <TextView
+        style="@style/DebugSectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Build Information" />
+
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version Name" />
+
+    <TextView
+        android:id="@+id/debug_build_name"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/DebugSectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp" />
+
+    <!--version code-->
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version Code" />
+
+    <TextView
+        android:id="@+id/debug_build_code"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/DebugSectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp" />
+
+    <!--sha-->
+
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Git SHA" />
+
+    <TextView
+        android:id="@+id/debug_build_sha"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/DebugSectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp" />
+    <!--build time-->
+    <TextView
+        style="@style/DebugValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build At" />
+
+    <TextView
+        android:id="@+id/debug_build_date"
+        style="@style/DebugValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
